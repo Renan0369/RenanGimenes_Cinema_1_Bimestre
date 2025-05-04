@@ -1,0 +1,175 @@
+/* Estilos gerais da página */
+body {
+  font-family: Arial, sans-serif;  /* Define a fonte padrão */
+  margin: 0;  /* Remove margens */
+  padding: 0;  /* Remove paddings */
+  background-color: #f8f8f8;  /* Cor de fundo cinza claro */
+  text-align: center;  /* Centraliza o texto */
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #222;  /* Cor de fundo escura */
+  color: white;  /* Cor do texto branco */
+  padding: 20px;  /* Espaçamento interno */
+}
+
+/* Estilo do conteúdo principal */
+main {
+  padding: 20px;  /* Espaçamento interno */
+}
+
+/* Estilo da seção de filmes */
+.filmes {
+  display: flex;  /* Layout flexível */
+  justify-content: center;  /* Centraliza horizontalmente */
+  gap: 30px;  /* Espaço entre os filmes */
+  flex-wrap: wrap;  /* Quebra linha se necessário */
+  margin-top: 20px;  /* Margem superior */
+}
+
+/* Estilo de cada filme */
+.filme {
+  background: white;  /* Fundo branco */
+  border-radius: 10px;  /* Bordas arredondadas */
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);  /* Sombra */
+  padding: 10px;  /* Espaçamento interno */
+  width: 200px;  /* Largura fixa */
+  cursor: pointer;  /* Cursor de ponteiro */
+  transition: transform 0.3s;  /* Animação suave */
+}
+
+/* Efeito ao passar o mouse */
+.filme:hover {
+  transform: scale(1.05);  /* Aumenta ligeiramente */
+}
+
+/* Estilo da imagem do filme */
+.filme img {
+  width: 100%;  /* Largura total */
+  border-radius: 10px;  /* Bordas arredondadas */
+}
+
+/* Estilo do título do filme */
+.filme h3 {
+  font-size: 18px;  /* Tamanho da fonte */
+  margin-top: 10px;  /* Margem superior */
+}
+
+/* Estilo da descrição do filme */
+.filme p {
+  font-size: 14px;  /* Tamanho da fonte */
+  color: #666;  /* Cor do texto cinza */
+  margin-top: 5px;  /* Margem superior */
+}
+
+/* Estilo dos botões */
+button {
+  margin: 5px;  /* Margem externa */
+  padding: 10px 20px;  /* Espaçamento interno */
+  font-size: 16px;  /* Tamanho da fonte */
+  cursor: pointer;  /* Cursor de ponteiro */
+}
+
+/* Estilo da seção de quantidade */
+.quantidade {
+  display: flex;  /* Layout flexível */
+  justify-content: center;  /* Centraliza horizontalmente */
+  align-items: center;  /* Centraliza verticalmente */
+  gap: 15px;  /* Espaço entre elementos */
+  margin: 20px 0;  /* Margem superior e inferior */
+}
+
+/* Estilo dos botões de quantidade */
+.quantidade button {
+  width: 40px;  /* Largura fixa */
+  height: 40px;  /* Altura fixa */
+  font-size: 24px;  /* Tamanho da fonte maior */
+}
+
+/* Estilo dos inputs */
+input {
+  width: 80%;  /* Largura relativa */
+  padding: 8px;  /* Espaçamento interno */
+  margin: 5px 0;  /* Margem superior e inferior */
+  font-size: 16px;  /* Tamanho da fonte */
+}
+
+/* Estilo da sala de cinema */
+.sala {
+  display: grid;  /* Layout em grid */
+  grid-template-columns: repeat(4, 60px);  /* 4 colunas de 60px */
+  gap: 10px;  /* Espaço entre assentos */
+  justify-content: center;  /* Centraliza horizontalmente */
+  margin: 30px 0;  /* Margem superior e inferior */
+}
+
+/* Estilo dos assentos */
+.assento {
+  width: 60px;  /* Largura fixa */
+  height: 60px;  /* Altura fixa */
+  background-color: #eee;  /* Cor de fundo */
+  border: 2px solid #333;  /* Borda */
+  display: flex;  /* Layout flexível */
+  align-items: center;  /* Centraliza verticalmente */
+  justify-content: center;  /* Centraliza horizontalmente */
+  cursor: pointer;  /* Cursor de ponteiro */
+  font-weight: bold;  /* Texto em negrito */
+  border-radius: 6px;  /* Bordas arredondadas */
+}
+
+/* Estilo do assento selecionado */
+.assento.selecionado {
+  background-color: yellow;  /* Cor de fundo amarela */
+}
+
+/* Estilo da seção de horários */
+.horarios {
+  display: flex;  /* Layout flexível */
+  gap: 10px;  /* Espaço entre botões */
+  justify-content: center;  /* Centraliza horizontalmente */
+  margin: 20px 0;  /* Margem superior e inferior */
+}
+
+/* Estilo dos botões de horário */
+.horarios button {
+  padding: 10px 20px;  /* Espaçamento interno */
+  font-size: 16px;  /* Tamanho da fonte */
+  border: 2px solid #444;  /* Borda */
+  background-color: #eee;  /* Cor de fundo */
+  border-radius: 5px;  /* Bordas arredondadas */
+  transition: 0.2s;  /* Transição suave */
+}
+
+/* Efeito ao passar o mouse nos horários */
+.horarios button:hover {
+  background-color: #ddd;  /* Cor de fundo mais escura */
+}
+
+/* Estilo do horário selecionado */
+.horarios button.selecionado {
+  background-color: lightgreen;  /* Cor de fundo verde claro */
+  border-color: green;  /* Borda verde */
+}
+
+/* Estilo do rodapé */
+.rodape {
+  background-color: #222;  /* Cor de fundo escura */
+  color: #fff;  /* Cor do texto branco */
+  padding: 30px 20px;  /* Espaçamento interno */
+  text-align: center;  /* Centraliza o texto */
+  margin-top: 50px;  /* Margem superior */
+  font-family: Arial, sans-serif;  /* Define a fonte */
+}
+
+/* Estilo do título no rodapé */
+.rodape h2 {
+  margin-bottom: 15px;  /* Margem inferior */
+  font-size: 24px;  /* Tamanho da fonte */
+}
+
+/* Estilo dos parágrafos no rodapé */
+.rodape p {
+  margin: 5px 0;  /* Margem superior e inferior */
+  font-size: 16px;  /* Tamanho da fonte */
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">  <!-- Define codificação de caracteres -->
+  <title>Escolher Sessão</title>  <!-- Título da página -->
+  <link rel="stylesheet" href="../css/style.css">  <!-- Link para o CSS -->
+</head>
+<body>
+  <header><h1>Escolha o horário e a quantidade</h1></header>  <!-- Título principal -->
+  <main>
+    <p id="filmeEscolhido"></p>  <!-- Local para mostrar o filme escolhido -->
+    
+    <h3>Escolha a quantidade de ingressos:</h3>  <!-- Subtítulo -->
+    <div class="quantidade">
+      <button onclick="alterarQuantidade(-1)">-</button>  <!-- Botão para diminuir -->
+      <span id="qtdIngressos">1</span>  <!-- Mostra a quantidade atual -->
+      <button onclick="alterarQuantidade(1)">+</button>  <!-- Botão para aumentar -->
+    </div>
+    
+    <h3>Subtotal: R$<span id="subtotal">30</span>,00</h3>  <!-- Mostra o subtotal -->
+
+    <h3>Escolha o horário da sessão:</h3>  <!-- Subtítulo -->
+    <div class="horarios">
+      <!-- Botões de horários disponíveis -->
+      <button data-hora="14:00">14:00</button>
+      <button data-hora="16:30">16:30</button>
+      <button data-hora="19:00">19:00</button>
+      <button data-hora="21:30">21:30</button>
+    </div>
+
+    <h3>Escolha os assentos:</h3>  <!-- Subtítulo -->
+    <div class="sala">
+      <!-- Assentos disponíveis -->
+      <div class="assento" data-id="A1">A1</div>
+      <div class="assento" data-id="A2">A2</div>
+      <div class="assento" data-id="A3">A3</div>
+      <div class="assento" data-id="A4">A4</div>
+      <div class="assento" data-id="B5">B5</div>
+      <div class="assento" data-id="B6">B6</div>
+      <div class="assento" data-id="B7">B7</div>
+      <div class="assento" data-id="B8">B8</div>
+    </div>
+
+    <br>
+    <button onclick="confirmarSessao()">Confirmar</button>  <!-- Botão de confirmação -->
+  </main>
+
+  <script src="../js/script.js"></script>  <!-- Link para o JavaScript -->
+</body>
+</html>
